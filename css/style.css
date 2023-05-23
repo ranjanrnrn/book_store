@@ -1,0 +1,303 @@
+/*--------------------- navbar up--------------------- */
+
+#navup{
+  width: 100%;
+  background-color: #54636b;
+  text-align: center;
+  padding:8px 0px 8px 0px;
+}
+#navup>h5 {
+  color: white;
+}
+
+
+/*--------------------- navbar--------------------- */
+
+
+/*--------------------- nav-sec-1--------------------- */
+
+#navsec1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0% 3% 0% 3%;
+}
+#navsec1>#left{
+  width: 70%;
+  display: flex;
+  padding: 10px 0px 10px 0px;
+  align-items:center ;
+}
+#navsec1>#left>h4{
+  color: rgb(177, 177, 177);
+  font-size: 20px;
+}
+.navbtn{
+  background-color: white;
+  border:none;
+  color: rgb(123, 123, 123);
+  font-size: 15px;
+  padding: auto;
+}
+#navsec1>#right{
+  width: 10%;
+  margin-left: 40%;
+  display: flex;
+  padding: 15px 0px 10px 0px;
+}
+#loginlogo{
+  width: 35%;
+}
+
+
+/*--------------------- nav-sec-2--------------------- */
+#navsec2{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+#logo{
+  width: 15%
+}
+#logo>a>img{
+  width:100% ;
+  margin-left: 12%;
+}
+#searchinput{
+  width: 70%;
+ 
+  margin-left: 5%;
+}
+#searchinput>input{ 
+  height: 100%;
+  width: 90%;
+  border: 2px solid black;
+  /* padding: auto 0px auto 0px; */
+}
+#searchlogo{
+  height: 100%;
+  border: none;
+  background-color: white;
+  margin-bottom: 15px;
+  /* width: 5%; */
+}
+#svg{
+  width: 100%;
+  height:90%;
+}
+#cartlogo{
+  height: 90%;
+}
+#cartlogo>a>img{
+  width: 100%;
+  height: 90%;
+}
+
+/*--------------------- nav-sec-3--------------------- */
+#navsec3{
+  display: flex;
+  justify-content: space-evenly;
+  width: 97%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.navbtn2{
+  background-color: white;
+  /* border-color:  #66BB6A  #5e5eff  #FFEB3B #00E5FF; */
+  border: none;
+  font-size: 18px;
+  align-items:center;
+  padding: auto;
+}
+#navsec3>h4{
+  color: rgb(123, 123, 123);
+}
+.navbtn2:hover{
+  border: 3px solid;
+  border-color:  #ffffff  #ffffff  #ca6303 #ffffff;
+}
+
+
+/*--------------------- offer-1--------------------- */
+#offer1{
+  align-items: center;
+  text-align: center;
+  padding: 18px 0px 18px 0px;
+  background-color: #ffcd9e;
+}
+
+/*--------------------- offer-2--------------------- */
+
+#offer2{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  background-color: #546E7A;
+}
+
+/*---------------------slider-1--------------------- */
+#carouselExampleIndicators{
+  margin-bottom: 20px;
+}
+
+#carouselExampleIndicators~div{
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*---------------------swiper slider-1--------------------- */
+.swiper {
+  border: 1px solid;
+  border-color:black white black white;
+  width: 90%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*---------------------new this week--------------------- */
+#newthisweek{
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  display: flex;
+}
+.thisweek_img{
+  width: 80%;
+}
+.thisweek_img:hover{
+  box-shadow: rgb(236, 6, 6) 0px 1px 4px, rgb(255, 9, 9) 0px 0px 0px 3px;}
+#addbanner{
+  margin: auto;
+  width: 80%;
+}
+.fnstyle{
+  font-family: Georgia, serif;
+}
+#addbannerimg{
+  width: 100%;
+}
+
+/* <!-------- New in Paperback--------> */
+
+#paperback{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.paperback1:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.paperbackbook{
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+/* <!-------- New in Paperback--------> */
+.offerpost{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.offerpost1{
+  border: 1px solid;
+  padding-top: 30px;
+  border-color: black white white white;
+  margin-top: 30px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.offerpostimg{
+  margin-bottom:15px;
+  width: 80%;
+}
+.offerpostdiv:hover{
+  padding-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+#explorenow{
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+}
+#explorenow:hover{
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#explorenow>img{
+  width: 100%;
+}
+
+/* <!-------- adv3div--------> */
+
+#adv3div{
+  margin-top: 50px;
+  width: 90%;
+  justify-content: space-between;
+  margin: 70px auto auto auto;
+  display: flex;
+}
+.adv3divimg{
+  margin-top: 20px;
+  width: 90%;
+}
+.adv3divchild:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+#bigadv{
+  border: 1px solid;
+  border-color: black white white white;
+  padding-top: 20px;
+  width: 90%;
+  margin: auto;
+}
+#bigadvimg{
+  width: 100%;
+}
+
+#footer1{
+  margin: auto;
+  width: 90%;
+}
+#footer1img{
+  width: 100%;
+}

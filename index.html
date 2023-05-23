@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="../css/responsive.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="navup">
+        <h5>BUY ONE, GET ONE 50% OFF JIGSAW PUZZLES</h5>
+    </div>
+
+    <!------------------- navbar starts here ------------------->
+
+
+    <div id="navbar">
+        <!-- section-1 -->
+        <div id="navsec1">
+            <div id="left">
+                <button class="navbtn">STORES & EVENTS</button>
+                <h4>|</h4>
+                <button class="navbtn">BLOG & PODCAST</button>
+                <h4>|</h4>
+                <button class="navbtn">MEMBERSHIP</button>
+                <h4>|</h4>
+                <button class="navbtn">COUPONS & DEALS</button>
+                <h4>|</h4>
+                <button class="navbtn">BESTSELLERS</button>
+                <h4>|</h4>
+                <button class="navbtn">GIFT CARDS</button>
+            </div>
+            <div id="right">
+                <a href="html/signup.html"><img id="loginlogo"src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" alt=""></i></a>
+            </div>
+        </div>
+        <!-- section-2 -->
+        <div id="navsec2">
+            <div id="logo">
+                <a href="./index.html"><img id="logoimg"src="https://dl.dropboxusercontent.com/s/ib9xpbeh5p8hnpx/book%20store%20logo11.png?dl=0" alt="BOOKSTORE.COM"></a>
+            </div>
+            <div id="searchinput">
+                <input oninput="search()"id="search" placeholder="Search" name="search">
+                <button id="searchlogo">
+                    <svg id="svg"xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+            </div>
+            <div id="cartlogo">
+                <a href="./html/cart.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAY1BMVEX///8AAADh4eFxcXFubm4wMDCoqKi4uLjQ0NCSkpL29vbBwcHv7+/s7OzJycn8/Pw1NTWenp6MjIwpKSl3d3dnZ2eYmJiysrIdHR3W1tZISEhdXV0XFxdPT08SEhJ/f389PT02yF6tAAAET0lEQVRoge1b2ZaiMBAFVJBdRFa19f+/cvpUwShUJSRNiHPm9H2zi8kl4aa2ZBznF/83vNr3PkB7dL+x73LbvL0LuAeWmd0RbZ3Y5K3cFy4WP3RSvhG7fWCPOb6+M3/59pi7yztzZY/YSevTi7iwSOxEQf+XOLJJ/O1Cqi/kzezyfvtM/NC1bV7HA96ddd4EVvpk+QM7To57ObXN6zyAN7bO2wDv2TqvZ91lIaIbCMt6GuCgsKrdZrjwadXZ3R6cfAILvO6F8no2eLkIYIV3T3mr5X+1HjfKW4Oh8LYCJhiUN4a/Pzitm4AHDqKnhsQVGMwgg+G5nQSGcquQhJ+RS5fRY3Ub8YpHxzdqNuLFMoHz/ygsxqWYALqlE2dKwXTYhle2W8DUbiMs2UdEj8Um0bGvjIYNd71EtD7YuPrsruUMuSwN15LPV3FrM6670aLlnCHKSuCUUFglNejmBHS3YHQXpY0HsFJhaeYErejNRWnyHqyMsPRiJKMemaxkwjoG6uDEAwMfRGUQCmuDJBpldReZ0xbs5nlxQ4RC+xPs5vtZclk5zmXB/lOgrMRdMlwP82U/DPsUV9cdPHA1Tbs4bFpuIix/cRnvmwjrIfJHsyc4YUVHJUiCoKz5Gog2mrKLvlP15GDoZU0bT6CAVJWWCzooK6kbTDAkkUCWqfPS3K2Av8u7n5jmkk+hUaXS5ht6o6OUFz0aTeuVQ39J3jlHWcnzRcw3mcQgq0MV+HR41MZd3rIRCWsF4MRoqR6IQFg3k41KlNXSMULFC2sFMHtaqvdQQAarswhltbSCxst+JVmNj13NNQwztYkMwjJXnYVKsnKcnZIM1CHwgASG+0kd5orL76cRAtQhTJ1fSLbgVWnkl8vDaEPFD+3M0yqdWxTGadUScowf5WVvBo9C0RcMaZjawyYBwmrtX+7AfMj6oexQVlg9/QagsOyfnaGwNmpUygDC+rIvrOX6bRvo9gWluKqvW2eSV9y2ojgtj6YB9Q92/BCvE9zM0Ur6OBRp+DyYQaWbmuZGoEn6i88gzeI4W+qneXEcm7yRmQc97Kv2KtmKSY29oNLY7UTvdSPNrURzDtrXQ7WROU8LF9qvAYSThyoDfYp5kCi5Gc9z7vWnqtFz7veYAzUawFY3KsaZVI0/nhLSztt4A/TRhK1kVTSQY0g8gJMdwhTpbnXvC1EYmfBAFb0TkLsHWKqPNe6Zfzk9zE5++NsB18nyYzqqFf0ocCp/3QUu4rwfP2slPNlF2Z4X3MzK+mpWs+xZQd+nqw+/Vt7FHJzV8Au7tWQq58m+9icq+yGGxj/279IDL9Xh5Qr64+d4DH6gyOKx506OefLBp12bLBi7I2sbfulwR/mFnkabeP6M5MxVFWRMTqiP5XfThj8dkg39+bT5ZOZicfy21CfRtqzfaHeGjgmSMwrZfRbi9evG2+qyZEibufPDsOnk80izIqzjT/wnn1/8K/gDrbg54Fpq2DMAAAAASUVORK5CYII=" alt=""></i></a>
+            </div>
+        </div>
+        <!-- section-3 -->
+
+        <div id="navsec3">
+                <a href="./html/books.html"><button class="navbtn2">Books</button></a>
+                <h4>|</h4>
+                <a href="./html/fiction.html"><button class="navbtn2">Fiction</button></a>
+                <h4>|</h4>
+                <a href="./html/nonfiction.html"><button class="navbtn2">Nonfiction</button></a>
+                <h4>|</h4>
+                <a href="./html/ebooks.html"><button class="navbtn2">eBooks</button></a>
+                <h4>|</h4>
+                <a href="./html/audiobooks.html"><button class="navbtn2">Audiobooks</button></a>
+                <h4>|</h4>
+                <a href="./html/teens&ya.html"><button class="navbtn2">Teens & YA</button></a>
+                <h4>|</h4>
+                <a href="./html/kids.html"><button class="navbtn2">Kids</button></a>
+                <h4>|</h4>
+                <a href="./html/toys &games.html"><button class="navbtn2">Toys & Games</button></a>
+                <h4>|</h4>
+                <a href="./html/Stationery & Gifts.html"><button class="navbtn2">Stationery & Gifts</button></a>
+                <h4>|</h4>
+                <a href="./html/Music & Movies.html"><button class="navbtn2">Music & Movies</button></a>
+        </div>
+
+    </div>
+    <!------------------- navbar ends here ------------------->
+    <div id="offer1">
+        <h5>Get a $10 eGift Card When You Spend $50 or More* | With Code: Take10</h5>
+    </div>
+    <div id="offer2">
+        <h5>50% Off Thousand of Hardcover Books &  More Deals - Online & In Stores </h5>
+    </div>
+
+    
+   <!-- sliding template start -->
+   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://dl.dropboxusercontent.com/s/ge6hys2cogwopil/Screenshot%202023-01-20%20211338.png?dl=0" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/01/10/25641_Quote_A3_Haunted_House_01-10.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/01/17/25643_Quote_A3_Chain-of-Thorns_01-17.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/01/11/25642_Quote_A3_Kerri-Maniscalco_01-11.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+   <!-- sliding template end -->
+
+  <div>
+    <p>FIND YOUR PLACE AT B&N'S ONLINE BOOKSTORE
+      Over 5 million books ready to ship, 3.6 million eBooks and 300,000 audiobooks to download right now! Curbside pickup available in most stores!</p>
+  </div>
+
+  <!-- swiper slider-1-->
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-1.png" alt=""></div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-2.png" alt=""></div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-3.png" alt=""></div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-4.png" alt=""> </div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-5.png" alt=""></div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-7.png" alt=""> </div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-9.png" alt=""> </div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-10.png" alt=""></div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-1.png" alt=""></div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-12.png" alt=""></div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-13.png" alt=""> </div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-14.png" alt=""></div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-15.png" alt=""> </div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-6.png" alt=""> </div>
+    <div class="swiper-slide"><img src="./image/swiper-1/swiper-8.png" alt=""> </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-------- New This Week-------->
+<div>
+  <h1 class="fnstyle">New This Week</h1>
+</div>
+
+<div id="newthisweek">
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781728229362_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780063235410_p0_v6%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781250859945_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780063279025_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781538742808_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593549100_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593537336_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781250859884_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+</div>
+
+<div id="addbanner">
+  <img id="addbannerimg"src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/01/09/25653_BB-B_50_Off_Sale_12-28b.jpg" alt="">
+</div>
+
+
+<!-------- New in Paperback-------->
+<div>
+  <h1 class="fnstyle">New in Paperback</h1>
+</div>
+<div id="paperback">
+  <div class="paperback1">
+    <img class="paperbackbook" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781250624208_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt="">
+    <h5>Just Friends</h5>
+    <p>Sophie Sullivan</p>
+    <p>★★★☆☆</p>
+  </div>
+  <div class="paperback1">
+    <img class="paperbackbook" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781728265285_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt="">
+    <h5>Glitterland</h5>
+    <p>Alexis Hall</p>
+    <p>★★★★☆</p>
+  </div>
+  <div class="paperback1">
+    <img class="paperbackbook" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593296066_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt="">
+    <h5>Fiona and Jane</h5>
+    <p>Jean Chen Ho</p>
+    <p>★★★☆☆</p>
+  </div>
+  <div class="paperback1">
+    <img class="paperbackbook" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593200667_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt="">
+    <h5>A Lover By Design</h5>
+    <p>Elizabeth Everett</p>
+    <p>★★★★☆</p>
+  </div>
+  <div class="paperback1">
+    <img class="paperbackbook" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780063055995_p0_v6%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt="">
+    <h5>A River Enchanted</h5>
+    <p>Rebecca Ross</p>
+    <p>★★★★★</p>
+  </div>
+  <div class="paperback1">
+    <img class="paperbackbook" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780063280021_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt="">
+    <h5>Pandor: A Novel</h5>
+    <p>Susan Stokes</p>
+    <p>★★★☆☆</p>
+  </div>
+  <div class="paperback1">
+    <img class="paperbackbook" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781639101535_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt="">
+    <h5>Phaedra: A Novel</h5>
+    <p>Laura Shepperson</p>
+    <p>★★★★☆</p>
+  </div>
+
+</div>
+
+
+<!-------- offers poster------->
+
+
+<div class="offerpost1">
+  <div class="offerpostdiv">
+    <img class="offerpostimg"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B900%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/01/17/25643_PCL_4_New-in-YA_01-17.jpg%5D&scale=options%5Blimit%5D,size%5B900x10000%5D&sink=format%5Bwebp%5D" alt="">
+    <h5>THRILLING FANTACY, NEW LOVES & DARK MYSTRIES</h5>
+  </div>
+  <div class="offerpostdiv">
+    <img class="offerpostimg"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B900%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/01/18/25645_PCL_1_YR_Classic_Penguin_01-20.jpg%5D&scale=options%5Blimit%5D,size%5B900x10000%5D&sink=format%5Bwebp%5D" alt="">
+    <h5>A YOUNG READERS CLASSIC</h5>
+  </div>
+</div>
+<div class="offerpost">
+  <div class="offerpostdiv">
+    <img class="offerpostimg"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B900%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://dispatch.barnesandnoble.com/content/dam/ccr/BNApp/PromoCarousel/2022/12/25657_PCL_2-OMP_01-01.jpeg%5D&scale=options%5Blimit%5D,size%5B900x10000%5D&sink=format%5Bwebp%5D" alt="">
+    <h5>BUY ONE GET ONE 50% OFF</h5>
+  </div>
+  <div class="offerpostdiv">
+    <img class="offerpostimg"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B900%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2022/12/30/25535_PCL_2_NYNY_12-30.jpg%5D&scale=options%5Blimit%5D,size%5B900x10000%5D&sink=format%5Bwebp%5D" alt="">
+    <h5>YOUR NEW YEAR START HERE</h5>
+  </div>
+</div>
+
+<div id="explorenow">
+  <img src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/01/25539_BB_D_Puzzle_Month_01-01.jpg" alt="">
+</div>
+
+
+<!-------- B&N Top 100 Books------->
+<div>
+  <h1 class="fnstyle">B&N Top Books</h1>
+</div>
+
+<div id="newthisweek">
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593593806_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781728205489_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781481431934_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781481449366_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593474600_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780385549400_p0_v12%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781501171345_p0_v7%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781635575606_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+</div>
+
+<!-------- 50% Off Thousands of Books------->
+<div>
+  <h1 class="fnstyle">50% Off Thousands of Books</h1>
+</div>
+
+<div id="newthisweek">
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780735220201_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781250835826_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781250788832_p0_v4%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780759554344_p0_v4%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781250856036_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781982173401_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593316443_p0_v7%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781501171345_p0_v7%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+</div>
+
+
+<!-------- Buy One, Get One 50% Off Books for Every Reader------->
+<div>
+  <h1 class="fnstyle">Buy One, Get One 50% Off Books for Every Reader</h1>
+</div>
+
+<div id="newthisweek">
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593500767_p0_v6%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593336823_p0_v7%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780679723165_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780062941510_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780765387530_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781250313188_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780525559757_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780679735779_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+</div>
+
+
+<!-------- Inspirational Reads------->
+<div>
+  <h1 class="fnstyle">Inspirational Reads</h1>
+</div>
+
+<div id="newthisweek">
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781546029175_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781501177699_p0_v4%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780525654025_p0_v3%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780310460749_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780310364962_p0_v4%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781400335817_p0_v2%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9780593194188_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+  <div class="newthisweek_img"><img class="thisweek_img"src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B300%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&product=path%5B/pimages/9781400336708_p0_v1%5D&call=url%5Bfile:common/decodeProduct.chain%5D" alt=""></div>
+</div>
+
+
+<!-------- adv 3 div------->
+<div id="adv3div">
+  <div class="adv3divchild">
+    <img class="adv3divimg" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/01/10/25641_PCL_1_Lit_Romance_01-10.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="">
+    <h5>CLASSIC LOVE STORY</h5>
+    <p>Explore Literary Romance</p>
+  </div>
+  <div class="adv3divchild">
+    <img class="adv3divimg" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/01/03/25556_PCL_4_ValentinesDay_01-03.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="">
+    <h5>FALL IN LOVE WITH BOOKS</h5>
+    <p>Shop Valentine's Day</p>
+  </div>
+  <div class="adv3divchild">
+    <img class="adv3divimg" src="https://prodimage.images-bn.com/lf?set=key%5Bresolve.pixelRatio%5D,value%5B1%5D&set=key%5Bresolve.width%5D,value%5B600%5D&set=key%5Bresolve.height%5D,value%5B10000%5D&set=key%5Bresolve.imageFit%5D,value%5Bcontainerwidth%5D&set=key%5Bresolve.allowImageUpscaling%5D,value%5B0%5D&set=key%5Bresolve.format%5D,value%5Bwebp%5D&source=url%5Bhttps://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2022/12/26/25533_PCS_2_Kids_PWP_12-26.jpg%5D&scale=options%5Blimit%5D,size%5B600x10000%5D&sink=format%5Bwebp%5D" alt="">
+    <h5>ONLY $99 SPECIAL KID'S OFFER!</h5>
+    <p>Explore kid's offer</p>
+  </div>
+</div>
+
+<!-------- big add poster------->
+
+<div id="bigadv">
+  <img id="bigadvimg"src="https://dispatch.barnesandnoble.com/content/dam/ccr/homepage/daily/2023/01/17/25643_BB_B_SignedEditions_01-17.jpg" alt="">
+</div>
+
+
+<!-------- footer-1------->
+<div id="footer1">
+  <img id="footer1img"src="./image/footer-1.png" alt="">
+</div>
+<div id="footer1">
+  <img id="footer1img"src="./image/footer-2.png" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Swiper -1--JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 9,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
+
+
+<!-- Initialize Swiper -->
+</body>
+
+
+<!-- --------------java script----------------- -->
+
+<script src="./scripts/index.js"></script>
+<!-- --------------java script----------------- -->
+
+
+</html>
+
+
+
+<!-- //   ---------------------*---------------------*---------------------*--------------------- -->
